@@ -12,7 +12,7 @@ export default function Navbar() {
     { label: 'Home', path: '/' },
     { label: 'About', path: '/about' },
     { label: 'Dashboard', path: '/dashboard' },
-    { label: 'Analysis', path: '/analysis' }
+    { label: 'Practical', path: '/practical' }
   ];
 
   const toggleMenu = () => {
@@ -72,14 +72,12 @@ export default function Navbar() {
                 onClick={toggleMenu}
                 type="button"
                 className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
-                aria-expanded={isMenuOpen.toString()}
               >
                 <span className="sr-only">Open main menu</span>
-                {/* Icon for menu - you can replace with your preferred icon */}
                 <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
-                </button>
+              </button>
             </div>
           </div>
         </div>
